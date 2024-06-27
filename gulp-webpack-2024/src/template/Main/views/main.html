@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/Common/head/head.html', { 'title': 'Главная', 'css':
+'main' })
+
+<body>
+  <div class="full-wrapper">
+    @@include('components/Common/header/export/header.html')
+    <main class="page">
+      <div class="page__inner">
+        <h1>Hello World</h1>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modals -->
+  <!-- Preloader -->
+  @@include('components/Shared/Preloaders/page-preloader/page-preloader.html')
+  <!-- Footer -->
+  @@include('components/Common/footer/main-footer/footer.html')
+
+  <!-- page scripts -->
+  <script src="../styles/js/main.min.js"></script>
+  <!-- end -->
+</body>
+
+</html>

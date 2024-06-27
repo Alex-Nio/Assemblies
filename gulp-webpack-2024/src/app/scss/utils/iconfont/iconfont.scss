@@ -1,0 +1,546 @@
+@import './vars';
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?l2g3ag');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?l2g3ag#iefix')
+      format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?l2g3ag')
+      format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?l2g3ag##{$icomoon-font-family}')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-loading {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  min-height: 24px;
+
+  @include media-small {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    background: url('./../../assets/images/icons/icon-loading.svg');
+    background-size: contain;
+
+    @include media-small {
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      min-height: 20px;
+    }
+  }
+}
+
+.icon-sbp {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  min-height: 24px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    background: url('./../../assets/images/icons/icon-sbp.svg');
+    background-size: contain;
+  }
+}
+
+.icon-ya-pay {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  min-height: 24px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    background: url('./../../assets/images/icons/icon-yandex-pay.svg');
+    background-size: contain;
+  }
+}
+
+.icon-ruble {
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  min-width: 17px;
+  height: 34px;
+  min-height: 34px;
+
+  @include media-large {
+    width: 15px;
+    min-width: 15px;
+    height: 32px;
+    min-height: 32px;
+  }
+
+  @include media-small {
+    width: 11px;
+    min-width: 11px;
+    height: 28px;
+    min-height: 28px;
+  }
+
+  @include media-extra-small {
+    width: 11px;
+    min-width: 11px;
+    height: 26px;
+    min-height: 26px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    min-width: 17px;
+    height: 34px;
+    min-height: 34px;
+    background: url('./../../assets/images/icons/icon-ruble-xl.svg');
+
+    @include media-large {
+      width: 15px;
+      min-width: 15px;
+      height: 32px;
+      min-height: 32px;
+      background: url('./../../assets/images/icons/icon-ruble-l.svg');
+    }
+
+    @include media-small {
+      width: 11px;
+      min-width: 11px;
+      height: 28px;
+      min-height: 28px;
+      background: url('./../../assets/images/icons/icon-ruble-m.svg');
+    }
+
+    @include media-extra-small {
+      width: 11px;
+      min-width: 11px;
+      height: 26px;
+      min-height: 26px;
+      background: url('./../../assets/images/icons/icon-ruble-s.svg');
+    }
+  }
+}
+
+.icon-star {
+  &:before {
+    content: $icon-star;
+  }
+}
+.icon-correspondence56 {
+  &:before {
+    content: $icon-correspondence56;
+  }
+}
+.icon-fast56 {
+  &:before {
+    content: $icon-fast56;
+  }
+}
+.icon-guarantee56 {
+  &:before {
+    content: $icon-guarantee56;
+  }
+}
+.icon-integration1C56 {
+  &:before {
+    content: $icon-integration1C56;
+  }
+}
+.icon-integration56 {
+  &:before {
+    content: $icon-integration56;
+  }
+}
+.icon-pricing56 {
+  &:before {
+    content: $icon-pricing56;
+  }
+}
+.icon-security56 {
+  &:before {
+    content: $icon-security56;
+  }
+}
+.icon-speed56 {
+  &:before {
+    content: $icon-speed56;
+  }
+}
+.icon-web56 {
+  &:before {
+    content: $icon-web56;
+  }
+}
+.icon-arrow-right32 {
+  &:before {
+    content: $icon-arrow-right32;
+  }
+}
+.icon-arrow-up-right32 {
+  &:before {
+    content: $icon-arrow-up-right32;
+  }
+}
+.icon-bag32 {
+  &:before {
+    content: $icon-bag32;
+  }
+}
+.icon-bitrix32 {
+  &:before {
+    content: $icon-bitrix32;
+  }
+}
+.icon-check32 {
+  &:before {
+    content: $icon-check32;
+  }
+}
+.icon-headphones32 {
+  &:before {
+    content: $icon-headphones32;
+  }
+}
+.icon-integration32 {
+  &:before {
+    content: $icon-integration32;
+  }
+}
+.icon-phone32 {
+  &:before {
+    content: $icon-phone32;
+  }
+}
+.icon-responsive32 {
+  &:before {
+    content: $icon-responsive32;
+  }
+}
+.icon-rupor32 {
+  &:before {
+    content: $icon-rupor32;
+  }
+}
+.icon-shop32 {
+  &:before {
+    content: $icon-shop32;
+  }
+}
+.icon-tools32 {
+  &:before {
+    content: $icon-tools32;
+  }
+}
+.icon-arrow-left24 {
+  &:before {
+    content: $icon-arrow-left24;
+  }
+}
+.icon-arrow-right24 {
+  &:before {
+    content: $icon-arrow-right24;
+  }
+}
+.icon-arrow-square24 {
+  &:before {
+    content: $icon-arrow-square24;
+  }
+}
+.icon-arrow-up-right24 {
+  &:before {
+    content: $icon-arrow-up-right24;
+  }
+}
+.icon-bag24 {
+  &:before {
+    content: $icon-bag24;
+  }
+}
+.icon-bell24 {
+  &:before {
+    content: $icon-bell24;
+  }
+}
+.icon-burger24 {
+  &:before {
+    content: $icon-burger24;
+  }
+}
+.icon-calendar24 {
+  &:before {
+    content: $icon-calendar24;
+  }
+}
+.icon-caret24 {
+  &:before {
+    content: $icon-caret24;
+  }
+}
+.icon-catalog24 {
+  &:before {
+    content: $icon-catalog24;
+  }
+}
+.icon-chats24 {
+  &:before {
+    content: $icon-chats24;
+  }
+}
+.icon-check24 {
+  &:before {
+    content: $icon-check24;
+  }
+}
+.icon-close24 {
+  &:before {
+    content: $icon-close24;
+  }
+}
+.icon-coin24 {
+  &:before {
+    content: $icon-coin24;
+  }
+}
+.icon-double-check24 {
+  &:before {
+    content: $icon-double-check24;
+  }
+}
+.icon-entrance24 {
+  &:before {
+    content: $icon-entrance24;
+  }
+}
+.icon-exit24 {
+  &:before {
+    content: $icon-exit24;
+  }
+}
+.icon-eye24 {
+  &:before {
+    content: $icon-eye24;
+  }
+}
+.icon-filter24 {
+  &:before {
+    content: $icon-filter24;
+  }
+}
+.icon-folder-open24 {
+  &:before {
+    content: $icon-folder-open24;
+  }
+}
+.icon-fourt-circle24 {
+  &:before {
+    content: $icon-fourt-circle24;
+  }
+}
+.icon-gear24 {
+  &:before {
+    content: $icon-gear24;
+  }
+}
+.icon-hash24 {
+  &:before {
+    content: $icon-hash24;
+  }
+}
+.icon-heart24 {
+  &:before {
+    content: $icon-heart24;
+  }
+}
+.icon-house24 {
+  &:before {
+    content: $icon-house24;
+  }
+}
+.icon-infinity24 {
+  &:before {
+    content: $icon-infinity24;
+  }
+}
+.icon-info24 {
+  &:before {
+    content: $icon-info24;
+  }
+}
+.icon-mail24 {
+  &:before {
+    content: $icon-mail24;
+  }
+}
+.icon-minus24 {
+  &:before {
+    content: $icon-minus24;
+  }
+}
+.icon-notepad24 {
+  &:before {
+    content: $icon-notepad24;
+  }
+}
+.icon-paper-clip24 {
+  &:before {
+    content: $icon-paper-clip24;
+  }
+}
+.icon-paper-plane24 {
+  &:before {
+    content: $icon-paper-plane24;
+  }
+}
+.icon-pencil24 {
+  &:before {
+    content: $icon-pencil24;
+  }
+}
+.icon-phone24 {
+  &:before {
+    content: $icon-phone24;
+  }
+}
+.icon-phone-call24 {
+  &:before {
+    content: $icon-phone-call24;
+  }
+}
+.icon-plus24 {
+  &:before {
+    content: $icon-plus24;
+  }
+}
+.icon-plus-circle24 {
+  &:before {
+    content: $icon-plus-circle24;
+  }
+}
+.icon-push-pin24 {
+  &:before {
+    content: $icon-push-pin24;
+  }
+}
+.icon-push-pin-down24 {
+  &:before {
+    content: $icon-push-pin-down24;
+  }
+}
+.icon-question24 {
+  &:before {
+    content: $icon-question24;
+  }
+}
+.icon-registration24 {
+  &:before {
+    content: $icon-registration24;
+  }
+}
+.icon-search24 {
+  &:before {
+    content: $icon-search24;
+  }
+}
+.icon-share24 {
+  &:before {
+    content: $icon-share24;
+  }
+}
+.icon-share-link24 {
+  &:before {
+    content: $icon-share-link24;
+  }
+}
+.icon-smile24 {
+  &:before {
+    content: $icon-smile24;
+  }
+}
+.icon-stack24 {
+  &:before {
+    content: $icon-stack24;
+  }
+}
+.icon-three-dots-gor24 {
+  &:before {
+    content: $icon-three-dots-gor24;
+  }
+}
+.icon-three-dots-vert24 {
+  &:before {
+    content: $icon-three-dots-vert24;
+  }
+}
+.icon-trash24 {
+  &:before {
+    content: $icon-trash24;
+  }
+}
+.icon-upload24 {
+  &:before {
+    content: $icon-upload24;
+  }
+}
+.icon-user24 {
+  &:before {
+    content: $icon-user24;
+  }
+}
+.icon-user-circle24 {
+  &:before {
+    content: $icon-user-circle24;
+  }
+}

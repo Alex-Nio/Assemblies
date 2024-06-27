@@ -1,0 +1,9 @@
+.footer {
+  background-color: $footer-bg;
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    @include daysOne-upper80;
+  }
+}

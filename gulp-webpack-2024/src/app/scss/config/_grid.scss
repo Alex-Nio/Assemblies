@@ -1,0 +1,55 @@
+// Ограничивающий контейнер
+//? Тип адаптива (Выбрать нужный вариант):
+//* 1 = отзывчивость (у контейнера нет брейкпоинтов),
+//* 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам см. _variables.scss)
+$responsive-type: 2;
+
+//! ================================================================
+//! Настройки Контейнера
+/*
+  (i) Стили будут применяться ко
+  всем классам содержащим *__container
+  Например header__container, main__container и т.д.
+*/
+
+[class*='__container'] {
+  max-width: $container-max-width + $container-default-padding * 2;
+  margin: 0 auto;
+  padding: 0 $container-default-padding;
+}
+
+// Отзывчивая
+@if ($responsive-type == 1) {
+  [class*='__container'] {
+    // Фулл-сайз
+    @if ($container-max-width > 0) {
+      max-width: rem($container-max-width);
+      margin: 0 auto;
+    }
+
+    // Если padding > 0 делим на 2
+    @if ($container-default-padding > 0) {
+      padding: 0 math.div($container-default-padding, 2);
+    }
+  }
+}
+
+// По брейк-поинтам
+@else {
+  [class*='__container'] {
+    @include container(
+      (
+        //? 1920-1660
+        ($xl, 1560, 16),
+        //? 1659-1280
+        ($lg, 1140, 40),
+        //? 1279-992
+        ($md, 912, 40),
+        //? 991-768
+        ($sm, 688, 20),
+        //? 767-
+        ($xs, 100%, 16)
+      )
+    );
+  }
+}

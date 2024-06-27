@@ -1,0 +1,203 @@
+// *================================================================
+//? Шрифты и заголовки
+// *================================================================
+
+// daysOne-upper
+@mixin daysOne-upper80 {
+  font-family: $ff_Dr;
+  font-size: 80px;
+  line-height: 124%;
+  text-transform: uppercase;
+}
+
+@mixin daysOne-upper58 {
+  font-family: $ff_Dr;
+  font-size: 58px;
+  line-height: 124%;
+  text-transform: uppercase;
+}
+
+@mixin daysOne-upper48 {
+  font-family: $ff_Dr;
+  font-size: 48px;
+  line-height: 128%;
+  text-transform: uppercase;
+}
+
+@mixin daysOne-upper40 {
+  font-family: $ff_Dr;
+  font-size: 40px;
+  line-height: 128%;
+  text-transform: uppercase;
+}
+
+@mixin daysOne-upper32 {
+  font-family: $ff_Dr;
+  font-size: 32px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+@mixin daysOne-upper26 {
+  font-family: $ff_Dr;
+  font-size: 26px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+@mixin daysOne-upper24 {
+  font-family: $ff_Dr;
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+@mixin daysOne-upper20 {
+  font-family: $ff_Dr;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+@mixin daysOne-upper18 {
+  font-family: $ff_Dr;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+// daysOne-lower
+@mixin daysOne-lower26 {
+  font-family: $ff_Dr;
+  font-size: 26px;
+  line-height: 130%;
+}
+
+@mixin daysOne-lower24 {
+  font-family: $ff_Dr;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+@mixin daysOne-lower20 {
+  font-family: $ff_Dr;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+@mixin daysOne-lower18 {
+  font-family: $ff_Dr;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+// Text nunito-r
+@mixin nunito-r24 {
+  font-family: $ff_NSr;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@mixin nunito-r20 {
+  font-family: $ff_NSr;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+@mixin nunito-r18 {
+  font-family: $ff_NSr;
+  font-size: 18px;
+  line-height: 132%;
+}
+
+@mixin nunito-r16 {
+  font-family: $ff_NSr;
+  font-size: 16px;
+  line-height: 136%;
+}
+
+@mixin nunito-r14 {
+  font-family: $ff_NSr;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+@mixin nunito-r12 {
+  font-family: $ff_NSr;
+  font-size: 12px;
+  line-height: 132%;
+}
+
+// Text nunito-sb
+@mixin nunito-sb24 {
+  font-family: $ff_NSsb;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@mixin nunito-sb20 {
+  font-family: $ff_NSsb;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+@mixin nunito-sb18 {
+  font-family: $ff_NSsb;
+  font-size: 18px;
+  line-height: 132%;
+}
+
+@mixin nunito-sb16 {
+  font-family: $ff_NSsb;
+  font-size: 16px;
+  line-height: 136%;
+}
+
+@mixin nunito-sb14 {
+  font-family: $ff_NSsb;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+@mixin nunito-sb12 {
+  font-family: $ff_NSsb;
+  font-size: 12px;
+  line-height: 132%;
+}
+
+// Text nunito-b
+@mixin nunito-b24 {
+  font-family: $ff_NSb;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@mixin nunito-b20 {
+  font-family: $ff_NSb;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+@mixin nunito-b18 {
+  font-family: $ff_NSb;
+  font-size: 18px;
+  line-height: 132%;
+}
+
+@mixin nunito-b16 {
+  font-family: $ff_NSb;
+  font-size: 16px;
+  line-height: 136%;
+}
+
+@mixin nunito-b14 {
+  font-family: $ff_NSb;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+@mixin nunito-b12 {
+  font-family: $ff_NSb;
+  font-size: 12px;
+  line-height: 132%;
+}

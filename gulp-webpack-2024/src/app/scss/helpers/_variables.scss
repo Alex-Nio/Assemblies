@@ -1,0 +1,93 @@
+//? Основные цвета
+$main: #1f1d2b;
+$white: #ffffff;
+// $accent: ;
+// neutral
+$neutral-0: #fcfcfe;
+$neutral-100: #f5f5fb;
+$neutral-200: #e5eaf4;
+$neutral-300: #8b97ae;
+$neutral-400: #2d2b3e;
+$neutral-500: #262434;
+$neutral-600: #1f1d2b;
+// primary
+$primary-100: #f5f2ff;
+$primary-400: #8766ff;
+$primary-600: #6946e8;
+// secondary
+$secondary-100: #ffe9f7;
+$secondary-400: #f089cd;
+$secondary-600: #db6ab5;
+// success
+$success-100: #f2fff9;
+$success-400: #2fd181;
+$success-600: #1db469;
+// warning
+$warning-100: #fff9df;
+$warning-400: #ffc700;
+$warning-600: #d8a800;
+// danger
+$danger-100: #fff5f4;
+$danger-400: #ff7a72;
+$danger-600: #ff574d;
+
+//? Состояния
+// $normal: #6946e8;
+$hover: #8766ff;
+// $active: #6946e8;
+// $disabled: rgba(68, 50, 138, 0.5);
+
+//? Состояния текста
+$default-text: #8b97ae;
+$hover-text: #ffffff;
+$active-text: #ffffff;
+$disabled-text: #8b97ae;
+
+//? Фоны
+$footer-bg: #262434;
+
+//? Размер иконок
+$icon-fz32: 32px;
+$icon-fz24: 24px;
+$icon-fz20: 20px;
+
+//? Border-radius
+$default-br: 12px;
+$menu-br: 40px;
+$panel-item-br: 16px;
+
+//? Z-index
+$header-z-index: 55;
+
+//? По умолчанию
+$base_fz: 16px; //? Размер шрифта по умолчанию 16px
+$base_ff: 'NunitoSans-Regular', sans-serif; //? Шрифт по умолчанию
+$base_hover: $hover; //? Цвет hover по умолчанию
+$base_bg: $main; //? Цвет фона по умолчанию
+$base_color: $white; //? Цвет текста по умолчанию
+
+//! Направление right-to-left или left-to-right
+// $web-direction: rtl;
+$web-direction: ltr;
+
+//? Переменные семейств шрифтов
+$ff_Dr: 'DaysOne-Regular', sans-serif;
+$ff_Msb: 'Montserrat-SemiBold', sans-serif;
+$ff_NSr: 'NunitoSans-Regular', sans-serif;
+$ff_NSsb: 'NunitoSans-SemiBold', sans-serif;
+$ff_NSb: 'NunitoSans-Bold', sans-serif;
+
+//? Стиль шрифтов
+$I: italic;
+$O: oblique;
+
+//? Толщина семейства шрифтов
+$th: 100; // Thin
+$el: 200; // Extra Light
+$l: 300; // Light
+$r: 400; // Regular
+$m: 500; // Medium
+$sb: 600; // SemiBold
+$b: 700; // Bold
+$eb: 800; // Extra Bold
+$bl: 900; // Super
