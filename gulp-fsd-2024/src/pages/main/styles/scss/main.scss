@@ -1,0 +1,8 @@
+// App
+@import './../../../../app/config/global.scss';
+// Shared components
+@import './../../../../shared/components/Buttons/increase/ui/increase.scss';
+@import './../../../../shared/components/Buttons/decrease/ui/decrease.scss';
+@import './../../../../shared/components/Inputs/counter-input/ui/counter-input.scss';
+// Widgets
+@import './../../../../widgets/palette-generator/_widget/palette-generator.scss';

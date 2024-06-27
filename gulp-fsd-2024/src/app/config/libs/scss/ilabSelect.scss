@@ -1,0 +1,303 @@
+//? Default params
+$height: 46px; // Высота инпута
+$max-height: 200px; // Максимальная высота выпадающего списка
+//? Input
+$input-padding: 0 10px; // Внутренние отступы input
+$input-border: 1px solid #ccc; // Цвет и размер обводки input
+$input-border-hover: 1px solid teal; // Цвет hover для input
+$input-border-focus: 1px solid teal; // Цвет focus для input
+$input-br: 5px; // Border-radius основного input
+$placeholder-fz: 16px; // Размер шрифта для placeholder в input
+//? Dropdown
+$active-z-index: 100; // Z-index открытого dropdown
+$dropdown-margin-top: 8px; // Отступ сверху для dropdown
+$dropdown-border: 1px solid #ccc; // Цвет и размер обводки dropdown
+$dropdown-br: 5px; // Border-radius для dropdown
+$dropdown-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3); // Тень для dropdown
+//? Dropdown item
+$dropdown-item-padding: 8px; // Отступы для dropdown item
+$dropdown-item-bg: #fff; // Цвет Background для dropdown item
+$dropdown-item-hover-bg: #eee; // Цвет hover для Background в dropdown item
+$active-dropdown-item-bg: bisque; // Цвет активного item в dropdown
+//? Icon
+$icon-fz: 14px; // Размер иконки (регулируется через font-size)
+$icon-position-right: 14px; // Отступ справа для icon
+//? Parent elements for default dropdown and search dropdown
+$main-selector: ".select-dropdown"; // Родительский input
+$main-list: ".select-dropdown-list"; // Родительский dropdown
+$search-selector: ".select-search";
+$search-list: ".select-search-list";
+
+//* Default
+#{$main-selector} {
+  position: relative;
+  width: 100%;
+
+  &.active {
+    z-index: $active-z-index;
+
+    #{$main-selector}__dropdown {
+      opacity: 1;
+      visibility: visible;
+      max-height: $max-height;
+      transition: max-height 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+    }
+
+    #{$main-selector}__input {
+      & i {
+        &.active {
+          transform: translateY(-50%) rotate(-180deg);
+          transition: transform 0.3s linear;
+        }
+      }
+    }
+
+    #{$main-selector}__backdrop {
+      display: block;
+    }
+  }
+
+  // .select-dropdown__backdrop
+  &__backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  // .select-dropdown__input
+  &__input {
+    display: flex;
+    align-items: center;
+    height: $height;
+    border: $input-border;
+    border-radius: $input-br;
+    padding: $input-padding;
+
+    & i {
+      position: absolute;
+      right: $icon-position-right;
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      font-size: $icon-fz;
+      transition: transform 0.3s linear;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        cursor: pointer;
+        border: $input-border-hover;
+        transition: border 0.3s linear;
+      }
+    }
+  }
+
+  // .select-dropdown__dropdown
+  &__dropdown {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: calc($height + $dropdown-margin-top);
+    max-height: 0px;
+    will-change: max-height;
+    left: 0;
+    right: 0;
+    border: $dropdown-border;
+    border-radius: $dropdown-br;
+    overflow-y: auto;
+    box-shadow: $dropdown-shadow;
+    transition: max-height 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+  }
+
+  // .select-dropdown__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#{$main-list} {
+  // .select-dropdown-list__item
+  &__item {
+    padding: $dropdown-item-padding;
+    background-color: $dropdown-item-bg;
+    transition: background-color 0.3s linear;
+
+    // Нижняя линия у dropdown-item
+    // Убрать если не используется
+    &:not(:last-child) {
+      border-bottom: 1px solid #ada8a8;
+    }
+
+    &.active {
+      background-color: $active-dropdown-item-bg;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        cursor: pointer;
+        background-color: $dropdown-item-hover-bg;
+        transition: background-color 0.3s linear;
+      }
+    }
+  }
+}
+
+//* Search
+#{$search-selector} {
+  position: relative;
+  width: 100%;
+
+  &.active {
+    z-index: $active-z-index;
+
+    #{$search-selector}__dropdown {
+      opacity: 1;
+      visibility: visible;
+      max-height: $max-height;
+      transition: max-height 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+    }
+
+    #{$search-selector}__input {
+      & i {
+        &.active {
+          transform: translateY(-50%) rotate(-180deg);
+          transition: transform 0.3s linear;
+        }
+      }
+    }
+
+    #{$search-selector}__backdrop {
+      display: block;
+    }
+  }
+
+  // .select-search__backdrop
+  &__backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  // .select-search__label
+  &__label {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    & i {
+      position: absolute;
+      top: 50%;
+      right: $icon-position-right;
+      transform: translateY(-50%) rotate(0deg);
+      font-size: $icon-fz;
+      transition: transform 0.3s linear;
+
+      &.active {
+        @media (any-hover: hover) {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &::before {
+          content: "\f00d"; // Заменить на нужный активный класс иконки
+        }
+      }
+    }
+  }
+
+  // .select-search__input
+  &__input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: $height;
+    padding: $input-padding;
+    border: $input-border;
+    border-radius: $input-br;
+    outline: none;
+
+    &::placeholder {
+      font-size: $placeholder-fz;
+      font-family: inherit;
+    }
+
+    &:focus {
+      border: $input-border-focus;
+      transition: border 0.3s linear;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        cursor: pointer;
+        border: $input-border-hover;
+        transition: border 0.3s linear;
+      }
+    }
+  }
+
+  // .select-search__dropdown
+  &__dropdown {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: calc($height + $dropdown-margin-top);
+    max-height: 0px;
+    will-change: max-height;
+    left: 0;
+    right: 0;
+    border: $dropdown-border;
+    border-radius: $dropdown-br;
+    overflow-y: auto;
+    box-shadow: $dropdown-shadow;
+    // z-index: 15;
+    transition: max-height 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+  }
+
+  // .select-search__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#{$search-list} {
+  // .select-search-list__item
+  &__item {
+    padding: $dropdown-item-padding;
+    background-color: $dropdown-item-bg;
+    transition: background-color 0.3s linear;
+
+    // Нижняя линия у dropdown-item
+    // Убрать если не используется
+    &:not(:last-child) {
+      border-bottom: 1px solid #ada8a8;
+    }
+
+    &.active {
+      background-color: $active-dropdown-item-bg;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        cursor: pointer;
+        background-color: $dropdown-item-hover-bg;
+        transition: background-color 0.3s linear;
+      }
+    }
+  }
+}
