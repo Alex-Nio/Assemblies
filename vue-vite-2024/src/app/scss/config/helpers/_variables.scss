@@ -1,0 +1,58 @@
+//? Основные цвета
+$white: #ffffff;
+$black: #2a2d32;
+$accent: #1253b5;
+
+$gray-100: #efeff3;
+$gray-200: #f4f4f7;
+$gray-400: #e7e8ee;
+$gray-600: #89909a;
+
+$hover-light: #063d8f;
+$hover-dark: #729bda;
+
+$disabled-light: #dedede;
+$disabled-dark: #494949;
+
+//? Bg
+//? Borders
+
+//? Стили для body умолчанию
+$base_fz: 1.6rem; //? Размер шрифта по умолчанию 16px
+$base_ff: "Arial", sans-serif; //? Шрифт по умолчанию
+$base_hover: $accent; //? Цвет при наведении по умолчанию
+$base_bg: $gray-200; //? Цвет фона по умолчанию
+$base_color: $black; //? Цвет текста по умолчанию
+
+//? Переменные семейств шрифтов
+$ff_UR: "Arial", sans-serif;
+
+//? Стиль шрифтов
+$I: italic;
+$O: oblique;
+
+//? Толщина семейства шрифтов
+$th: 100; // Thin
+$el: 200; // Extra Light
+$l: 300; // Light
+$r: 400; // Regular
+$m: 500; // Medium
+$sb: 600; // SemiBold
+$b: 700; // Bold
+$eb: 800; // Extra Bold
+$bl: 900; // Super
+
+//? Размеры
+$minWidth: 320px; // Минимальная ширина страницы
+$maxWidthContainer: 1170px; // Ширина контейнера (0 = нет ограничения)
+$containerPadding: 16px; // Отступы контейнера // (32 = по 16px слева и справа, 0 = нет отступа)
+$containerWidth: $maxWidthContainer + $containerPadding; // Ширина срабатывания первого брейкпоинта
+$headerHeight: 141px; // Высота отступа контента от header
+$headerMinWidth: 195px;
+
+//? Брейк-поинты
+$pc: 1199px; // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: 992px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 767px; // Телефоны L
+$mobileSmall: 340px; // Телефоны S
+$mobileXSmall: 300px;

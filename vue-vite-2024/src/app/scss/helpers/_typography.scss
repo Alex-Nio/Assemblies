@@ -1,0 +1,149 @@
+// *================================================================
+//? Шрифты и заголовки
+// *================================================================
+
+//? Headings
+@mixin heading-h1 {
+  font-family: $ff_NSsb;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+@mixin heading-h2 {
+  font-family: $ff_NSsb;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+@mixin heading-h3 {
+  font-family: $ff_NSsb;
+  font-size: 32px;
+  line-height: 124%;
+}
+
+@mixin heading-h4 {
+  font-family: $ff_NSsb;
+  font-size: 24px;
+  line-height: 132%;
+}
+
+@mixin heading-h5 {
+  font-family: $ff_NSsb;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+@mixin heading-h6 {
+  font-family: $ff_NSsb;
+  font-size: 18px;
+  line-height: 142%;
+}
+
+//? Texts 20
+@mixin nunito-b20 {
+  font-family: $ff_NSb;
+  font-size: 20px;
+  line-height: 132%;
+}
+
+@mixin nunito-sb20 {
+  font-family: $ff_NSsb;
+  font-size: 20px;
+  line-height: 132%;
+}
+
+@mixin nunito-r20 {
+  font-family: $ff_NSr;
+  font-size: 20px;
+  line-height: 132%;
+}
+// 18
+@mixin nunito-b18 {
+  font-family: $ff_NSb;
+  font-size: 18px;
+  line-height: 132%;
+}
+
+@mixin nunito-sb18 {
+  font-family: $ff_NSsb;
+  font-size: 18px;
+  line-height: 132%;
+}
+
+@mixin nunito-r18 {
+  font-family: $ff_NSr;
+  font-size: 18px;
+  line-height: 132%;
+}
+// 16
+@mixin nunito-b16 {
+  font-family: $ff_NSb;
+  font-size: 16px;
+  line-height: 136%;
+}
+
+@mixin nunito-sb16 {
+  font-family: $ff_NSsb;
+  font-size: 16px;
+  line-height: 136%;
+}
+
+@mixin nunito-r16 {
+  font-family: $ff_NSr;
+  font-size: 16px;
+  line-height: 136%;
+}
+// 14
+@mixin nunito-b14 {
+  font-family: $ff_NSb;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+@mixin nunito-sb14 {
+  font-family: $ff_NSsb;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+@mixin nunito-r14 {
+  font-family: $ff_NSr;
+  font-size: 14px;
+  line-height: 140%;
+}
+// 12
+@mixin nunito-b12 {
+  font-family: $ff_NSb;
+  font-size: 12px;
+  line-height: 132%;
+}
+
+@mixin nunito-sb12 {
+  font-family: $ff_NSsb;
+  font-size: 12px;
+  line-height: 132%;
+}
+
+@mixin nunito-r12 {
+  font-family: $ff_NSr;
+  font-size: 12px;
+  line-height: 132%;
+}
+// 10
+@mixin nunito-b10 {
+  font-family: $ff_NSb;
+  font-size: 10px;
+  line-height: 140%;
+}
+
+@mixin nunito-sb10 {
+  font-family: $ff_NSsb;
+  font-size: 10px;
+  line-height: 140%;
+}
+
+@mixin nunito-r10 {
+  font-family: $ff_NSr;
+  font-size: 10px;
+  line-height: 140%;
+}
