@@ -1,4 +1,0 @@
-// размер rem установлен в 10px по умолчанию от размера html элемента
-@function rem($px) {
-	@return calc($px / 10)+rem;
-}

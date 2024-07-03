@@ -1,18 +1,13 @@
-<script setup></script>
+<script setup>
+  import Page from '@/components/layout/Page.vue';
+  import Loader from './components/UI/loader/Loader.vue';
+</script>
 
 <template>
-  <Page class="page">
-    <div class="page__container">
-      <h1>Hello world</h1>
-    </div>
+  <Loader />
+  <Page>
+    <router-view />
   </Page>
 </template>
 
-<style lang="scss" scoped>
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-    line-height: 100%;
-    padding: 20vw;
-  }
-</style>
+<style lang="scss" scope></style>

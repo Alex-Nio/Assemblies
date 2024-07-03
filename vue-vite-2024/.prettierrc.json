@@ -1,0 +1,25 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "endOfLine": "auto",
+  "singleQuote": true,
+  "semi": true,
+  "indent": "off",
+  "useTabs": false,
+  "prettier.printWidth": 120,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "bracketSameLine": false,
+  "overrides": [
+    {
+      "files": "*.vue",
+      "options": {
+        "parser": "vue",
+        "vueIndentScriptAndStyle": true,
+        "singleAttributePerLine": true
+      }
+    }
+  ]
+}

@@ -4,6 +4,10 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [vue()],
+  server: {
+    port: 8080,
+    strictPort: true,
+  },
   build: {
     outDir: 'dist',
   },
@@ -14,7 +18,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/app/scss/global.scss";`,
+        additionalData: `@import "@/app/scss/imports.scss";`,
       },
     },
   },

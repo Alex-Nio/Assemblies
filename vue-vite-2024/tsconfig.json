@@ -1,0 +1,36 @@
+{
+  // "extends": "./node_modules/@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "*.vue",
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/**/*.json",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src-tauri"
+  ]
+}
