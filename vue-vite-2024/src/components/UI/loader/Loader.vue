@@ -1,12 +1,23 @@
 <script setup>
-  import { ref } from 'vue';
-  import { loading } from '@/app/router/index.js';
+import { loading } from '@/app/router/index.js';
+import { ref, watch } from 'vue';
+
+const transitioning = ref(false);
+
+watch(loading, (newVal) => {
+  if (!newVal) {
+    transitioning.value = true;
+    setTimeout(() => {
+      transitioning.value = false;
+    }, 300); 
+  }
+});
 </script>
 
 <template>
   <div
-    v-if="loading"
-    class="preloader"
+    v-if="loading || transitioning"
+    :class="['preloader', { hidden: !loading }]"
   >
     <div class="spinner"></div>
   </div>
@@ -25,6 +36,14 @@
     border-radius: 18px;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1000;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .spinner {

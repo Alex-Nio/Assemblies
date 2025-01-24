@@ -21,11 +21,6 @@ const router = createRouter({
       path: '/ui',
       component: () => import('@/pages/UI.vue'),
     },
-    // {
-    //   name: 'movie',
-    //   path: '/movies/:id',
-    //   component: () => import('@/pages/Movie.vue')
-    // }
   ],
 });
 
@@ -39,7 +34,7 @@ router.beforeEach((to, from, next) => {
 router.afterEach(() => {
   setTimeout(() => {
     loading.value = false;
-  }, 500); // Имитация загрузки, замените по необходимости
+  }, 500);
 });
 
 export default router;
